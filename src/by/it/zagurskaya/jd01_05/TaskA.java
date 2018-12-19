@@ -5,7 +5,7 @@ import com.sun.org.apache.xerces.internal.impl.xpath.regex.Match;
 
 public class TaskA {
     public static void maim (String[] arg ){
-        step1();
+        step1();//1111
         step2();
         step3();
     }
