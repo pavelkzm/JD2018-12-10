@@ -5,22 +5,17 @@ import java.util.Scanner;
 
 public class TaskB {
     public static void main (String[] args) {
-       // System.out.println("Введите количество сотрудников");
+        System.out.println("Введите количество сотрудников");
         Scanner scanner= new Scanner(System.in);
         int kol_chel = scanner.nextInt();
         float itogo = 0;
         float srednee=0;
         Scanner scanner2= new Scanner(System.in);
         int [][] arrayZp= new int[kol_chel][4];
-        // Scanner scanner= new Scanner(System.in);
-        // int kol_chel = scanner.nextInt();
 
-        //  int[][] asd=new int[kol_chel][4];
-        // asd[0][0]=scanner.nextInt();
-        //  System.out.println(asd[1][1]);
         Scanner sc= new Scanner(System.in);
 
-       // System.out.println("Введите фамилии");
+        System.out.println("Введите фамилии");
         String []arr= new String[kol_chel];
         for (int i = 0; i < kol_chel; i++) {
             arr[i]= sc.next();
