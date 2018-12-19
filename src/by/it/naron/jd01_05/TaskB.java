@@ -17,7 +17,29 @@ public class TaskB {
     }
 
     private static void step2(){
+        double b = 0;
+        double a;
+        for (double x = -6; x < 2; x+=0.5){
+            if ((x/2)>-2&&(x/2)<=-1){
+                b=sin(x*x);
+                printForStep2(b,x);
+            }else if ((x/2)>-1&&(x/2)<0.2){
+                b=cos(pow(x,2));
+                printForStep2(b,x);
+            }else if ((x/2)==0.2){
+                b = 1.0/tan(x*x);
+                printForStep2(b,x);
+            }else {
+                System.out.printf("для x= %1$f значения a и b не определены\n",x);
+            }
 
+        }
+
+
+    }
+    private static void printForStep2 (double b, double x){
+       double a = log10(abs(b + (2.74)));
+        System.out.printf("При x = %1$f  b = %2$f a = %3$f\n", x, b, a);
     }
 
 
