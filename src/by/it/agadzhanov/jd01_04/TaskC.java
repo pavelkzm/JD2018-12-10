@@ -1,4 +1,4 @@
-package by.it.agadzhanov.jd01_04;
+/**package by.it.agadzhanov.jd01_04;
 
 import java.util.Scanner;
 
@@ -21,13 +21,13 @@ public class TaskC {
         InOut.printArray(sortedArray, "V", 4);
 
         for (int i = 0; i < array.length; i++) {
-            if (first == array[i]) {
+            if (first == sortedArray[i]) {
                 System.out.printf("Index of first element=%d\n", i);
                 break;
             }
         }
         for (int i = 0; i < array.length; i++) {
-            if (last == array[i]) {
+            if (last == sortedArray[i]) {
                 System.out.printf("Index of last element=%d\n", i);
                 break;
             }
@@ -37,6 +37,17 @@ public class TaskC {
     private static double[] merge(double[] part1, double[] part2) {
         int totalLength = part1.length + part2.length;
         double[] mergedMas = new double[totalLength];
+        int l=0;
+        int r=0;
+        int i=0;
+        while (l+r<totalLength) {
+            if (l<part1.length  || r>=part2.length && part1[l]<part2[r]) {
+                mergedMas[i++]=part1[l++];
+            }
+            else mergedMas[i++]=part2[r++];
+
+
+        }
         for (int i = 0; i < totalLength; i++) {
             for (int j = 0; j < part1.length; j++) {
                 for (int k = 0; k < part2.length; k++) {
@@ -44,11 +55,13 @@ public class TaskC {
                         mergedMas[i] = part1[j];
                         j++;
                         i++;
-                    } else if (part2[k] < part1[j]) {
+                    }
+                    else if (part2[k] < part1[j]) {
                         mergedMas[i] = part2[k];
                         k++;
                         i++;
-                    } else {
+                    }
+                    else {
                         mergedMas[i] = part1[j];
                         j++;
                         i++;
@@ -76,3 +89,4 @@ public class TaskC {
         return sortedArray;
     }
 }
+ */
