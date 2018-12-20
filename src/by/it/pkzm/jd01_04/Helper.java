@@ -1,4 +1,4 @@
-package by.it._tasks_.jd01_04;
+package by.it.pkzm.jd01_04;
 
 public class Helper {
     static double findMax(double[] arr) {

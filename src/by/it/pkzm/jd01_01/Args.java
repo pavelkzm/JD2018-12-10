@@ -1,4 +1,4 @@
-package by.it._tasks_.jd01_02;
+package by.it.pkzm.jd01_01;
 
 import java.sql.SQLOutput;
 

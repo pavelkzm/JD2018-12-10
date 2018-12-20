@@ -1,4 +1,4 @@
-package by.it._tasks_.jd01_04;
+package by.it.pkzm.jd01_04;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -30,7 +30,9 @@ public class TaskB {
             arrTable[i][1] = arrNames[i];
         }
         for (int i = 0; i < size; i++) {
-            for (int j = 0; j <4-1 ; j++);
+            for (int j = 0; j <4-1 ; j++) {
+//               arrTable[i][j] = arrSalary[i][j];
+            }
 
 
 
