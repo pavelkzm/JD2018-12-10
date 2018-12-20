@@ -276,7 +276,7 @@ public class Test_jd01_02 {
             method.setAccessible(true);
             return method.invoke(o, value);
         } catch (Exception e) {
-            System.out.println(e.toString());
+            System.out.println(e.getCause());
             fail("\nERROR:Не удалось вызвать метод " + method.getName() + "\n");
         }
         return null;

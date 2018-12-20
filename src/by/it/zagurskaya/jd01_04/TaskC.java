@@ -1,31 +1,10 @@
 package by.it.zagurskaya.jd01_04;
 
-import java.util.Scanner;
-
-public class TaskA {
-    public static void main(String[] args) {
-        printMulTable();
-        Scanner scanner = new Scanner(System.in);
-        String line = scanner.nextLine();
-        buildOneDimArray(line);
-    }
-
-    /**
-     * print multiplication table
-     */
-    static void printMulTable() {
-        for (int i = 2; i < 10; i++) {
-            for (int j = 2; j < 10; j++) {
-                System.out.printf("%1d*%1d=%-2d ", i, j, i * j);
-            }
-            System.out.println();
-        }
-    }
+public class TaskC {
 
     static void buildOneDimArray(String line) {
         double[] array = InOut.getArray(line);
         InOut.printArray(array, "V", 5);
-      //  Helper.sort(array);
         double first = array[0];
         double last = array[array.length - 1];
         Helper.sort(array);
@@ -43,4 +22,6 @@ public class TaskA {
             }
         }
     }
+
+    static void mergeSort(double[ ] array) {}
 }

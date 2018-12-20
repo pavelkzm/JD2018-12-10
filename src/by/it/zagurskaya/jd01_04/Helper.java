@@ -1,8 +1,10 @@
 package by.it.zagurskaya.jd01_04;
-
-//import sun.plugin.com.Utils;
-// находим минимум
 public class Helper {
+    /**
+     * Find  min-s array
+     * @param arr one-dimensional array
+     * @return min-s array
+     */
     static double findMin(double[ ] arr) {
         double minElement;
         minElement=arr[0];
@@ -12,7 +14,11 @@ public class Helper {
         System.out.println(minElement);
         return minElement;
     }
-    // находим максимум
+    /**
+     * Find  max-s array
+     * @param arr one-dimensional array
+     * @return max-s array
+     */
     static double findMax(double[ ] arr){
         double maxElement;
         maxElement=arr[0];
@@ -22,7 +28,11 @@ public class Helper {
         System.out.println(maxElement);
         return maxElement;
     }
-    // сортировка
+
+    /**
+     * Sorting one-dimensional array
+     * @param arr one-dimensional array
+     */
     static void sort(double[ ] arr){
         boolean swap=true;
         int last=arr.length;
@@ -41,6 +51,13 @@ public class Helper {
         } while (swap);
 
     }
+
+    /**
+     * Multiplication two-dimensional array and one-dimensional array
+     * @param matrix two-dimensional array
+     * @param vector one-dimensional array
+     * @return vector
+     */
     static double[ ] mul(double[ ][ ] matrix, double[ ] vector) {
         double[] rezMultMatrixVector = new double[matrix.length];
         for (int i = 0; i <matrix.length ; i++) {
@@ -50,7 +67,12 @@ public class Helper {
         }
         return rezMultMatrixVector;
     }
-
+    /**
+     * Multiplication two-dimensional array and two-dimensional array
+     * @param matrixLeft two-dimensional array
+     * @param matrixRight two-dimensional array
+     * @return two-dimensional array
+     */
     static double[ ][ ] mul(double[ ][ ] matrixLeft, double[ ][ ] matrixRight){
         double[][] rezMultMatrixMatrix = new double[matrixLeft.length] [matrixRight[0].length];
         for (int i = 0; i <matrixLeft.length ; i++) {
