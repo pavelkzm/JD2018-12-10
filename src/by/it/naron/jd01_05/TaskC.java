@@ -5,7 +5,7 @@ public class TaskC {
     public static void main(String[] args) {
 
         step1("Arr", 25);
-      //  step2();
+        step2();
 
     }
 
@@ -64,7 +64,9 @@ public class TaskC {
         result = pow(sum, 1.0 / arr.length);
         return result;
     }
-    /////////////////////////////////////////////////////////
+
+
+
     private static void step2(){
         char[] tableElem = initializationChar();
         double[] arrayA = new double[31];
