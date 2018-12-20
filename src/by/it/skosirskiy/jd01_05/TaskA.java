@@ -24,6 +24,14 @@ public class TaskA {
         System.out.println(y);
     }
     private static void step3() {
+        double x=12.1;
+        double a=-5;
+        double f=0;
+        do {
 
+            f=exp(a*x)-3.45*a;
+            System.out.printf("%6s%5f%5s%6f", "при а= ", a, "f= ", f);
+            a=a+3.75;
+        } while ((-5<=a)&&(a<=12));
     }
 }
