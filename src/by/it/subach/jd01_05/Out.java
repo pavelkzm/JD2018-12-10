@@ -39,18 +39,18 @@ public class Out {
         for (int i = 0; i < arr.length; i++) {
 //            левый столбец
             if (i % columnCount == 0) {
-                System.out.printf("║ %s[%2d]=%-3d ║", name, i, arr[i]);
+                System.out.printf("║ %s[%2d]=%-3d ║", name, i+1, arr[i]);
 
 //              правый столбец
             }
             if ((i + 1) % columnCount == 0) {
-                System.out.printf(" %s[%2d]=%-3d ║\n", name, i, arr[i]);
+                System.out.printf(" %s[%2d]=%-3d ║\n", name, i+1, arr[i]);
                 if (i < arr.length - 1) {
                     System.out.println(mid);
                 }
             }
             if (i % columnCount != 0 && (i + 1) % columnCount != 0) {
-                System.out.printf(" %s[%2d]=%-3d ║", name, i, arr[i]);
+                System.out.printf(" %s[%2d]=%-3d ║", name, i+1, arr[i]);
             }
 
 //            последняя строка
@@ -115,14 +115,14 @@ public class Out {
                 i++;
             }
             boolean cellFill = false;
-            System.out.printf("║ %s[%2d]=%-3d ║", name, i, arr[i]);
+            System.out.printf("║ %s[%2d]=%-3d ║", name, i+1, arr[i]);
             cellFill = true;
             int k = rowCount;
             for (int j = 0; j < columnCount; j++) {
                 cellFill = false;
 
                 if (i + k < arr.length) {
-                    System.out.printf(" %s[%2d]=%-3d ║", "B", i + k, arr[i + k]);
+                    System.out.printf(" %s[%2d]=%-3d ║", "B", i + k+1, arr[i + k]);
                     cellFill = true;
                     k += rowCount;
                 }

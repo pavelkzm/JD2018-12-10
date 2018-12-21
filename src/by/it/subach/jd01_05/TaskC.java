@@ -8,10 +8,6 @@ public class TaskC {
         step2();
     }
 
-
-
-
-
     public static void step1() {
 
         int n = (int) (random() * ((40 - 20) + 1)) + 20;
