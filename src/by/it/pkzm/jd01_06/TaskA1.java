@@ -9,6 +9,6 @@ public class TaskA1 {
         Pattern pattern = Pattern.compile(reg);
         StringBuilder sb= new StringBuilder(Poem.text);
         Matcher matcher= pattern.matcher(sb);
-        while (matcher.find())
+//        while (matcher.find())
     }
 }
